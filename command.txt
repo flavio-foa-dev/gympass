@@ -1,3 +1,4 @@
 npm i typescript @types/node tsx tsup -D
 npx tsc --init
 npm install fastify dotenv zod
+npm i eslint @rocketseat/eslint-config -D
