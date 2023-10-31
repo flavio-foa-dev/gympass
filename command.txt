@@ -6,7 +6,7 @@ npm i prisma -D
 npx prisma init
 npm i @prisma/client
 npx prisma generate  //cria a typagem
-npx prisma migrate dev
+npx prisma migrate dev //atualiza magrete em dev nao e para production
 npx prisma studio
 
 
