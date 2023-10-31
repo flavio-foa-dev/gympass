@@ -12,3 +12,7 @@ npx prisma studio
 
 sh
 docker run --name api-solid-pg -e POSTGRESQL_USERNAME=postegress -e POSTGRESQL_PASSWORD=postegres -e POSTGRESQL_DATABASE=postgres -p 5432:5432 bitnami/postgressql
+
+1 / 1 separar os dados
+1 / n uma tabela com varios registro em outra tabela
+n / n muitos para muitos
