@@ -7,3 +7,4 @@ app
     port: env.PORT,
   })
   .then(() => console.log('listening on port', env.PORT))
+  .catch((err) => console.error('error', err.message))
