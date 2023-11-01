@@ -1,15 +1,19 @@
-import { PrismaUsersRepository } from '@/repositories/prisma/prisma-users-repository'
-import { test, expect, describe, it } from 'vitest'
+import { expect, describe, it, beforeEach } from 'vitest'
 import { RegisterUseCase } from './register'
 import { compare } from 'bcryptjs'
 import { InMemoryUserRepository } from '@/repositories/in-memory-user-repository'
 import { UserAlreadyExistsError } from './errors/user-already-exist-error'
 
-describe('Register Use Case', async () => {
-  it('should be able to register', async () => {
-    const userRepository = new InMemoryUserRepository()
-    const registerUseCase = new RegisterUseCase(userRepository)
+let userRepository: InMemoryUserRepository
+let registerUseCase: RegisterUseCase
 
+describe('Register Use Case', async () => {
+  beforeEach(() => {
+    userRepository = new InMemoryUserRepository()
+    registerUseCase = new RegisterUseCase(userRepository)
+  })
+
+  it('should be able to register', async () => {
     const input = {
       name: 'Flavio Andrade',
       email: 'flavioandrade@email.com',
