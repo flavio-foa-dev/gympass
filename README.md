@@ -5,7 +5,7 @@ Nodejs | API Rest | SQL | Fastify |
 
 
 - [x] Deve ser posivel se cadastrar
-- [] Deve ser posivel se autenticar
+- [x] Deve ser posivel se autenticar
 - [] Deve ser posivel obter o perfil de um usuario logado
 - [] Deve ser posivel obter o numero de chekins realizado pelo usuario logado
 - [] Deve ser posivel o usuario obter seu historico de chekins
