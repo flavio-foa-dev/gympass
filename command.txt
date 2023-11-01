@@ -15,4 +15,4 @@ docker run --name api-solid-pg -e POSTGRESQL_USERNAME=postegress -e POSTGRESQL_P
 
 1 / 1 separar os dados
 1 / n uma tabela com varios registro em outra tabela
-n / n muitos para muitos
+n / n muitos para muitos tabela intermediaria
