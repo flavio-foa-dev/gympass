@@ -11,6 +11,7 @@ npx prisma studio
 
 npm install bcryptjs
 npm i @types/bcryptjs
+npm i vitest vite-tsconfig-paths -D //itender path base
 
 
 sh

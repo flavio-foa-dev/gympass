@@ -1,6 +1,7 @@
 import { IUserRepository } from '@/repositories/user-repository'
 
 import { hash } from 'bcryptjs'
+import { UserAlreadyExistsError } from './errors/user-already-exist-error'
 
 interface IRegister {
   name: string
@@ -20,7 +21,7 @@ export class RegisterUseCase {
     const userWithSaameEmail = await this.userRepository.findByEmail(dto.email)
 
     if (userWithSaameEmail) {
-      throw new Error('E-mail already exists')
+      throw new UserAlreadyExistsError()
     }
 
     const dtoinput = {
