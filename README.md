@@ -4,7 +4,7 @@ Nodejs | API Rest | SQL | Fastify |
 ## RFs (Requesitos Funcionais)
 
 
-- [] Deve ser posivel se cadastrar
+- [x] Deve ser posivel se cadastrar
 - [] Deve ser posivel se autenticar
 - [] Deve ser posivel obter o perfil de um usuario logado
 - [] Deve ser posivel obter o numero de chekins realizado pelo usuario logado
@@ -16,7 +16,7 @@ Nodejs | API Rest | SQL | Fastify |
 - [] Deve ser posivel cadastrar uma academia
 
 ## RNs (Regras de Negocio)
-- [] O usuario nao deve poder se cadastrar com um e-mail duplicado
+- [x] O usuario nao deve poder se cadastrar com um e-mail duplicado
 - [] O usuario nao deve fazer 2 chekins mo mesmo dia
 - [] O usuario nao deve poder fazer chekins se nao estiver perto (100m) sa academia
 - [] O usuario nao deve poder se cadastrar com um e-mail duplicado
@@ -25,8 +25,8 @@ Nodejs | API Rest | SQL | Fastify |
 - [] A academia so pode ser cadastrado por administradores
 
 ## RNFs (Requesitos nao Funcionais)
-- [] A senha do usuario precisa esta criptografado
-- [] Os dados da aplicacao precisam esta persistido em um banco de dados
+- [x] A senha do usuario precisa esta criptografado
+- [x] Os dados da aplicacao precisam esta persistido em um banco de dados
 - [] Todas as listas de dados precisam estar paginadas com 20 itens por pagina
 - [] O ususario deve ser identificado por um token
 -

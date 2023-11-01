@@ -50,7 +50,7 @@ describe('Register Use Case', async () => {
     }
     await registerUseCase.create(input)
 
-    expect(() => registerUseCase.create(input)).rejects.toBeInstanceOf(
+    await expect(() => registerUseCase.create(input)).rejects.toBeInstanceOf(
       UserAlreadyExistsError,
     )
   })
