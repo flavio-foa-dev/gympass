@@ -9,6 +9,9 @@ npx prisma generate  //cria a typagem
 npx prisma migrate dev //atualiza magrete em dev nao e para production
 npx prisma studio
 
+npm install bcryptjs
+npm i @types/bcryptjs
+
 
 sh
 docker run --name api-solid-pg -e POSTGRESQL_USERNAME=postegress -e POSTGRESQL_PASSWORD=postegres -e POSTGRESQL_DATABASE=postgres -p 5432:5432 bitnami/postgressql
