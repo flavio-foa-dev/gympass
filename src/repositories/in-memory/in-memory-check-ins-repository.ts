@@ -20,7 +20,7 @@ export class InMemoryCheckInRepository implements ICheckInsRepository {
   async findByUserIdOnDate(userId: string, date: Date) {
     const startOfTheDay = dayjs(date).startOf('date')
     const endOfTheDay = dayjs(date).endOf('date')
-    console.log(`startDate: ${startOfTheDay}- endDate: ${endOfTheDay}`)
+    // console.log(`startDate: ${startOfTheDay}- endDate: ${endOfTheDay}`)
 
     const checkinOnSameDate = this.items.find((checkin) => {
       const checkInDate = dayjs(checkin.created_at)
@@ -43,5 +43,21 @@ export class InMemoryCheckInRepository implements ICheckInsRepository {
 
   async countByUserId(userId: string): Promise<number> {
     return this.items.filter((item) => item.user_id === userId).length
+  }
+
+  async findById(id: string) {
+    const chekin = this.items.find((item) => item.id === id)
+    if (!chekin) {
+      return null
+    }
+    return chekin
+  }
+
+  async save(checkIn: CheckIn) {
+    const checkinIndex = this.items.findIndex((item) => item.id === checkIn.id)
+    if (checkinIndex >= 0) {
+      this.items[checkinIndex] = checkIn
+    }
+    return checkIn
   }
 }

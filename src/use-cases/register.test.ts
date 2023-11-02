@@ -39,7 +39,6 @@ describe('Register Use Case', async () => {
       input.password,
       user.password_hash,
     )
-    console.log(userRepository.items)
     expect(isPasswordCorrectlyHash).toBe(true)
   })
 
