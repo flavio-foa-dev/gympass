@@ -13,6 +13,7 @@ npm install bcryptjs
 npm i @types/bcryptjs
 npm i vitest vite-tsconfig-paths -D //itender path base
 npm i -D @vitest/ui
+npm i dayjs
 
 
 sh
