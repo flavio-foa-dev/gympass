@@ -15,10 +15,12 @@ npm i vitest vite-tsconfig-paths -D //itender path base
 npm i -D @vitest/ui
 npm i dayjs
 
-
 sh
 docker run --name api-solid-pg -e POSTGRESQL_USERNAME=postegress -e POSTGRESQL_PASSWORD=postegres -e POSTGRESQL_DATABASE=postgres -p 5432:5432 bitnami/postgressql
 
 1 / 1 separar os dados
 1 / n uma tabela com varios registro em outra tabela
 n / n muitos para muitos tabela intermediaria
+n / n muitos para muitos tabela intermediaria
+git status
+
