@@ -29,6 +29,11 @@ Nodejs | API Rest | SQL | Fastify |
 - [x] Os dados da aplicacao precisam esta persistido em um banco de dados
 - [x] Todas as listas de dados precisam estar paginadas com 20 itens por pagina
 - [] O ususario deve ser identificado por um token
+- [] O ususario deve ser identificado por um token
+- [] O ususario deve ser identificado por um token
+- [] O ususario deve ser identificado por um token
+- [] O ususario deve ser identificado por um token
+-
 -
 
 -
